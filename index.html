@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alina Wickersham — AI engineer</title>
+<meta name="description" content="Alina Wickersham builds AI systems that make slow, manual work fast. AI Solutions Data Engineer and Team Lead at RTS Labs; published researcher in machine learning for health sensing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F7F4;
+    --ink:#16262B;
+    --ink-soft:#4A5B5E;
+    --teal:#2E6E6A;
+    --moss:#4F5D3F;
+    --rule:#D5DBD3;
+    --measure:34rem;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif;
+    font-size:19px;
+    font-weight:400;
+    line-height:1.62;
+    font-optical-sizing:auto;
+  }
+
+  .page{
+    max-width:56rem;
+    margin:0 auto;
+    padding:5.5rem 1.75rem 6rem;
+  }
+
+  a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(46,110,106,.35);}
+  a:hover{border-bottom-color:var(--teal);}
+  a:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px;}
+
+  /* ---- hero ---- */
+
+  .hero{
+    max-width:32rem;
+    margin-bottom:4.5rem;
+  }
+
+  .name{
+    font-size:1.0625rem;
+    font-weight:500;
+    letter-spacing:.01em;
+    margin:0 0 2.25rem;
+    color:var(--ink);
+  }
+
+  .statement{
+    font-size:clamp(1.85rem,4.2vw,2.75rem);
+    font-weight:300;
+    line-height:1.2;
+    letter-spacing:-.015em;
+    margin:0 0 1.5rem;
+    text-wrap:balance;
+  }
+
+  .hero p{
+    max-width:var(--measure);
+    margin:0 0 1.1rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---- sections ---- */
+
+  section{
+    border-top:1px solid var(--rule);
+    padding-top:2.5rem;
+    margin-top:3.5rem;
+  }
+
+  h2{
+    font-size:1.0625rem;
+    font-weight:500;
+    margin:0 0 2rem;
+    color:var(--moss);
+    letter-spacing:.01em;
+  }
+
+  /* ---- work list with chronology rail ---- */
+
+  .entry{
+    display:grid;
+    grid-template-columns:7.5rem 1fr;
+    gap:0 2.25rem;
+    margin-bottom:2.75rem;
+  }
+  .entry:last-child{margin-bottom:0;}
+
+  .when{
+    font-size:.9375rem;
+    font-weight:300;
+    color:var(--ink-soft);
+    line-height:1.5;
+    padding-top:.42rem;
+    font-variant-numeric:oldstyle-nums;
+  }
+
+  .what h3{
+    font-size:1.1875rem;
+    font-weight:600;
+    margin:0 0 .4rem;
+    line-height:1.35;
+  }
+
+  .role{
+    display:block;
+    font-size:.9375rem;
+    font-weight:400;
+    font-style:italic;
+    color:var(--teal);
+    margin-bottom:.55rem;
+  }
+
+  .what p{
+    margin:0;
+    max-width:var(--measure);
+    color:var(--ink-soft);
+  }
+
+  .stack{
+    margin:.65rem 0 0 !important;
+    font-size:.9375rem;
+    font-weight:300;
+    color:var(--ink-soft);
+    max-width:var(--measure);
+  }
+
+  /* ---- simple lists ---- */
+
+  ul.plain{
+    list-style:none;
+    margin:0;
+    padding:0;
+    max-width:var(--measure);
+  }
+
+  ul.plain li{
+    margin-bottom:1rem;
+    color:var(--ink-soft);
+  }
+  ul.plain li:last-child{margin-bottom:0;}
+
+  ul.plain strong{
+    font-weight:600;
+    color:var(--ink);
+  }
+
+  ul.reading li{
+    margin-bottom:.55rem;
+  }
+
+  .note{
+    font-size:.9375rem;
+    font-weight:300;
+    color:var(--ink-soft);
+  }
+
+  /* ---- contact ---- */
+
+  .contact p{
+    max-width:var(--measure);
+    margin:0 0 1.25rem;
+    color:var(--ink-soft);
+  }
+
+  .links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.75rem;
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+
+  footer{
+    margin-top:5rem;
+    font-size:.875rem;
+    font-weight:300;
+    color:var(--ink-soft);
+  }
+
+  @media (max-width:640px){
+    body{font-size:18px;}
+    .page{padding:3.5rem 1.35rem 4rem;}
+    .entry{grid-template-columns:1fr;gap:.35rem;}
+    .when{padding-top:0;}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <p class="name">Alina Wickersham</p>
+    <h1 class="statement">I build AI systems that make slow, manual work fast.</h1>
+    <p>AI Solutions Data Engineer and Team Lead at RTS Labs in Richmond, Virginia. Most of my work starts with a process that takes people too long — drafting a document, finding the right job for the right technician, answering a question buried in a database — and ends with a system in production that does it in a fraction of the time.</p>
+    <p>I studied computer science and psychology at the University of Richmond, and my research background is in machine learning for health sensing. Health is the domain I find most interesting to build in, mental health especially, and I am always glad to talk with people working there.</p>
+  </header>
+
+  <section>
+    <h2>Selected work</h2>
+
+    <div class="entry">
+      <div class="when">2026 &ndash; now</div>
+      <div class="what">
+        <h3>Document intelligence platform for family offices</h3>
+        <span class="role">Architect and lead &middot; concept to beta</span>
+        <p>Family offices handle financial documents full of client names, account numbers, and personal details. This tool strips that information out, then pulls the numbers that matter into structured data. I took it from an idea to a working product, now in beta, with a small core team. I owned the architecture, wrote much of the code, ran the delivery, and worked directly with the client.</p>
+        <p class="stack">React and Vite, Python redaction service, Azure OpenAI on a private endpoint, PostgreSQL, offset-based pseudonymization backed by a local entity recognition model, audit logging.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2026 &ndash; now</div>
+      <div class="what">
+        <h3>Labor standards generation from historical work orders</h3>
+        <span class="role">Developer &middot; heavy equipment industry</span>
+        <p>A dealer's technicians repair equipment thousands of times a year. How long should each repair take? The answer was buried in decades of work orders. This system reads that history and produces a labor standard for each job, with citations back to the records it came from, so a person can check the reasoning. Experts review the output in a purpose-built app before it goes into the client's systems.</p>
+        <p class="stack">Snowflake, Go, citation-backed generation pipeline, deterministic validation, XML export, evaluation harness.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2024 &ndash; 2025</div>
+      <div class="what">
+        <h3>AI drafting platform for legal demand letters</h3>
+        <span class="role">Architect and lead</span>
+        <p>Attorneys spend hours drafting demand letters that follow the same structure every time. We built a tool that drafts them. It cut the time roughly in half.</p>
+        <p style="margin-top:.9rem;">I was on this project from the beginning, including the stretch where it ran over budget and behind schedule. The real problem was not the technology. It was expectations that had never been set clearly with the client. Getting that right taught me more about running an engagement than anything else I have worked on. I changed the technical approach, put regular structured communication back in place, and steadied the delivery.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2025 &ndash; 2026</div>
+      <div class="what">
+        <h3>Conversational assistant over enterprise sales data</h3>
+        <span class="role">Solution Lead and developer &middot; national wholesale distributor</span>
+        <p>A sales team could already query their data, but it meant setting a stack of filters and then waiting for the results to load. Now they ask a question in plain English and get an answer back. Each person sees only the accounts they are allowed to see. With a small team, I built the chatbot, the permissions model, and the knowledge base behind it.</p>
+        <p class="stack">Python, SQL plus retrieval-augmented generation, role-based access control, ERP integration, Azure.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2025 &ndash; now</div>
+      <div class="what">
+        <h3>Real-time dispatch optimization</h3>
+        <span class="role">Workstream owner &middot; dispatcher dashboard</span>
+        <p>A dispatcher matches the right technician to the right job. Some of those calls are for right now, and some are planning a week out. The information needed for both lived in separate systems that did not talk to each other. Our team brought it together into two screens: one for making and changing assignments in real time, one for making smart assignments when planning ahead. I owned the dashboard work and contributed to the routing, integration, and write-back services underneath it.</p>
+        <p class="stack">Redis pub/sub and streams, WebSockets, React, route-optimization APIs, PostgreSQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Leading</h2>
+    <ul class="plain">
+      <li><strong>Team Lead at RTS Labs since 2025.</strong> Promoted fourteen months into my career. I manage and mentor five engineers alongside a full delivery load. We meet one-on-one twice a month, and my job in those conversations is to make sure people feel supported in the work they have and are growing toward the work they want.</li>
+      <li><strong>Client-facing from the start.</strong> Scoping, estimating, and architecture conversations directly with stakeholders, on engagements representing six figures in revenue.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Writing and research</h2>
+    <ul class="plain">
+      <li><strong>Machine learning for health sensing.</strong> Co-author, ACM UbiComp / ISWC 2022.</li>
+      <li><strong>Technical writing for RTS Labs.</strong> Experiments and benchmarks on how models behave in production:
+        <ul class="plain reading" style="margin-top:.6rem;">
+          <li><a href="https://rtslabs.com/rts-experiment-testing-context-adherence-across-10-cloud-local-models">Testing context adherence across ten cloud and local models</a></li>
+          <li><a href="https://rtslabs.com/ai-document-extraction-benchmark-study">AI document extraction benchmark study</a></li>
+          <li><a href="https://rtslabs.com/experiment-we-built-a-tiny-llm-from-scratch">We built a tiny LLM from scratch</a></li>
+          <li><a href="https://www.youtube.com/watch?v=kGPH4InUQj8">Video: building a tiny LLM</a></li>
+        </ul>
+      </li>
+      <li><strong>ACM Certified Peer Reviewer.</strong></li>
+      <li><strong>Gold Judge, Technovation Girls</strong> (2026). Evaluated eleven student team submissions across two rounds.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recognition</h2>
+    <ul class="plain">
+      <li><strong>Rising Star Award</strong>, rvatech Women in Tech Awards, 2026.</li>
+      <li><strong>Teammate of the Year</strong>, RTS Labs, 2025 &mdash; nominated by peers.</li>
+      <li><strong>Rookie of the Year</strong>, RTS Labs, 2024 &mdash; nominated by leadership.</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Get in touch</h2>
+    <p>I am always glad to talk about AI solutions, health applications of machine learning, or work that sits between the two.</p>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/alina-enikeeva/">LinkedIn</a></li>
+      <li><a href="https://github.com/alinaWickersham">GitHub</a></li>
+      <li><a href="mailto:wickershamalina@gmail.com">Email</a></li>
+    </ul>
+  </section>
+
+  <footer>Richmond, Virginia</footer>
+
+</main>
+</body>
+</html>
