@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-time dispatch optimization — Alina (Enikeeva) Wickersham</title>
+<meta name="description" content="A live dispatcher view unifying four disconnected operational systems, built on an event-driven backend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<main class="page">
+  <a class="back" href="../index.html#work">&larr; All work</a>
+
+  <article class="detail">
+    <h1>Real-time dispatch optimization</h1>
+    <p class="meta">Workstream owner, dispatcher dashboard &middot; heavy equipment industry &middot; 2025 – present</p>
+
+    <h2>Problem</h2>
+    <p>A dispatcher's job is to put the right technician, with the right equipment, in front of the right job. Some of those decisions are immediate — a machine is down, who can be there soonest. Others are planning: what does next week look like, and how do we assign work so people are not crossing the state twice.</p>
+    <p>The information needed for both lived in four separate operational systems that did not talk to each other. Service technicians were tracked in one place, haul drivers in another, vehicle telematics in a third. Answering a simple question meant checking several screens and trusting that none of them was stale.</p>
+
+    <h2>Solution</h2>
+    <p>A dispatch platform that pulls all of it into one live picture, built on an event-driven backend so that a change anywhere shows up everywhere within seconds rather than on the next refresh.</p>
+    <p>The dispatcher-facing side is two screens: one for making and changing assignments in real time, and one for making better assignments when planning ahead, with route optimization behind it.</p>
+
+    <h2>What I owned</h2>
+    <ul>
+      <li>The dispatcher dashboard workstream — the largest single piece of my work on the program.</li>
+      <li>Contributions to the routing and optimization service, the polling layer that ingests from external systems, and the write-back service that pushes changes home.</li>
+      <li>Client training on the delivered system.</li>
+    </ul>
+
+    <div class="figure">
+      <span class="n">4 &rarr; 1</span>
+      <span class="lbl">Four disconnected operational systems unified into one live view</span>
+    </div>
+
+    <div class="figure">
+      <span class="n">10</span>
+      <span class="lbl">Engineers, designers, and product on the program</span>
+    </div>
+
+    <h2>Stack</h2>
+    <p>Redis pub/sub and streams for event distribution, WebSockets for live updates, a React dashboard, an API gateway integrating four external operational systems, a third-party route optimization API, and PostgreSQL.</p>
+
+    <h2>What was interesting</h2>
+    <p>Real-time is a promise that gets harder the closer you look at it. Four upstream systems update on their own schedules, some by polling, and none of them agree about what "now" means. A dispatcher watching a screen has to be able to trust that what they see reflects the world, and to understand what is happening when it briefly does not.</p>
+    <p>Most of the interesting work sat in that gap: deciding what state the dashboard owns versus what it merely reflects, how updates propagate through the event layer without flooding the client, and what to show when an upstream system goes quiet. The answer is rarely a technical trick — it is deciding, with the people who will use it, which kind of wrong is acceptable.</p>
+  </article>
+
+  <footer>Richmond, Virginia</footer>
+</main>
+</body>
+</html>
